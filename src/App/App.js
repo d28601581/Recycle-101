@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import RoutesContainer from '../components/AllPlayers/routes/RoutesContainer';
+//import RoutesContainer from '../components/Pages/routes/RoutesContainer';
 import BeforeLogin from '../components/Navbar/BeforeLogin';
-import AfterLogin from'../components/Navbar/AfterLogin';
+//import AfterLogin from'../components/Navbar/AfterLogin';
+import Welcome from '../components/Pages/views/Welcome';
 
 class App extends Component {
   constructor(props){
@@ -18,7 +19,8 @@ class App extends Component {
     return (
       <div className='app'>
         <BeforeLogin/>
-        <AfterLogin/>
+ {/*       <AfterLogin/> */}
+        <Welcome />
       </div>
     );
   }
