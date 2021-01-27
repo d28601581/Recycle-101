@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import './App.css';
-import RoutesContainer from '../components/AllPlayers/routes/RoutesContainer';
+//import RoutesContainer from '../components/Pages/routes/RoutesContainer';
 import BeforeLogin from '../components/Navbar/BeforeLogin';
 import AfterLogin from'../components/Navbar/AfterLogin';
-import SignUpPage from '../components/Pages/SignUpPage';
+import SignUpPage from '../components/Pages/views/SignUpPage';
+import Welcome from '../components/Pages/views/Welcome';
+import LoginPage from '../components/Pages/views/LoginPage';
 
 class App extends Component {
   constructor(props){
@@ -18,9 +22,15 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <BeforeLogin/>
-        <AfterLogin/>
-        <SignUpPage/>
+        <Router>
+        <BeforeLogin/>   
+        
+          <Switch>
+            <Route exact path="/"> <Welcome/></Route> 
+            <Route path='/Login'> <LoginPage/></Route>
+            <Route path='/SignUp'> <SignUpPage/></Route>
+          </Switch> 
+        </Router>
       </div>
     );
   }
