@@ -3,6 +3,7 @@ import './App.css';
 import RoutesContainer from '../components/AllPlayers/routes/RoutesContainer';
 import BeforeLogin from '../components/Navbar/BeforeLogin';
 import AfterLogin from'../components/Navbar/AfterLogin';
+import SignUpPage from '../components/Pages/SignUpPage';
 
 class App extends Component {
   constructor(props){
@@ -19,6 +20,7 @@ class App extends Component {
       <div className='app'>
         <BeforeLogin/>
         <AfterLogin/>
+        <SignUpPage/>
       </div>
     );
   }
