@@ -1,0 +1,211 @@
+.header{
+    position: absolute;
+  width: 900px;
+  height: 90px;
+  left: 425px;
+  top: 138px;
+
+  font-family: Sansation Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 90px;
+/* identical to box height */
+
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.labelOne{
+  position: absolute;
+  width: 334px;
+  height: 27px;
+  left: 343px;
+  top: 260px;
+    
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.labelTwo{
+  position: absolute;
+  width: 131px;
+  height: 27px;
+  left: 343px;
+  top: 386px;
+   
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+ 
+  color: black;
+ 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.labelThree{
+  position: absolute;
+  width: 123px;
+  height: 27px;
+  left: 343px;
+  top: 512px;
+   
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+   
+  color: black;
+   
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.inputOne{
+  position: absolute;
+  width: 406px;
+  height: 28px;
+  left: 713px;
+  top: 260px;
+ 
+  background: #51CF25;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+   
+  color: black;
+   
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.inputTwo{
+    position: absolute;
+    width: 406px;
+    height: 28px;
+    left: 713px;
+    top: 386px;
+   
+    background: #51CF25;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+     
+    color: black;
+     
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #51cf25;
+  }
+
+.inputThree{
+  position: absolute;
+  width: 406px;
+  height: 28px;
+  left: 713px;
+  top: 512px;
+   
+  background: #51CF25;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+     
+  color: black;
+     
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+  }
+
+.titlea{
+  position: absolute;
+  width: 334px;
+  height: 27px;
+  left: 343px;
+  top: 638px;
+    
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+    
+  color: black;
+   
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.points{
+  position: absolute;
+  width: 28px;
+  height: 27px;
+  left: 896px;
+  top: 638px;
+      
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+      
+  color: black;
+     
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+  }
+
+.button{
+  position: absolute;
+  width: 28px;
+  height: 27px;
+  left: 620px;
+  top: 737px;
+}
+.button{
+  position: absolute;
+  width: 353px;
+  height: 103px;
+  left: 536px;
+  top: 737px;
+  border-radius: 50%;
+  background-color:#51CF25;
+  
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 27px;
+    
+  color: black;
+  
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25; 
+  }

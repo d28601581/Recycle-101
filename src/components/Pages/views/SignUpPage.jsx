@@ -14,11 +14,11 @@ export default class SignUpPage extends Component{
                     <br/>
                     <br/>
                     <label className='label'>Password: </label>
-                    <input className='input' id='password' type='text'/>
+                    <input className='input' id='password' type='password'/>
                     <br/>
                     <br/>
                     <label className='label'>Email: </label>
-                    <input className='input' id='email' type='text'/>
+                    <input className='input' id='email' type='email'/>
                     <br/>
                     <br/>
                     <button className='button'>Sign Up</button>
