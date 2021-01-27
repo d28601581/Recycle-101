@@ -14,7 +14,7 @@ export default class LoginPage extends Component{
                     <br/>
                     <br/>
                     <label className='label'>Password: </label>
-                    <input className='input' id='password' type='text'/>
+                    <input className='input' id='password' type='passssword'/>
                     <br/>
                     <br/>
                     <button className='button'>Login</button>
