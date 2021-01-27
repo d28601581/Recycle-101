@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './styles/SignUpPage.css';
+import BeforeLogin from '../../Navbar/BeforeLogin';
 
 export default class SignUpPage extends Component{
     render(){
         return(
             <div>
+                <BeforeLogin />
                 <div className='SignUpPage'>
                     <div className='SignUp'>Sign Up: </div><br/>
                     <label className='label'>Username: </label>

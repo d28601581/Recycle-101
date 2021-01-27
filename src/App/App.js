@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
 import './App.css';
-//import RoutesContainer from '../components/Pages/routes/RoutesContainer';
-import BeforeLogin from '../components/Navbar/BeforeLogin';
-import AfterLogin from'../components/Navbar/AfterLogin';
-import SignUpPage from '../components/Pages/views/SignUpPage';
-import Welcome from '../components/Pages/views/Welcome';
-import LoginPage from '../components/Pages/views/LoginPage';
+import RoutesContainer from '../components/Pages/routes/RoutesContainer';
+//import Welcome from '../components/Pages/views/Welcome';
 
 class App extends Component {
   constructor(props){
@@ -15,6 +9,7 @@ class App extends Component {
     this.state = {
       username: '',
       password: '',
+      point: 0,
       items: []
     }
   }
@@ -22,15 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <Router>
-        <BeforeLogin/>   
-        
-          <Switch>
-            <Route exact path="/"> <Welcome/></Route> 
-            <Route path='/Login'> <LoginPage/></Route>
-            <Route path='/SignUp'> <SignUpPage/></Route>
-          </Switch> 
-        </Router>
+        <RoutesContainer />
       </div>
     );
   }

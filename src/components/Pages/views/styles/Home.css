@@ -1,0 +1,81 @@
+.home{
+  position: absolute;
+  left: 41.81%;
+  right: 41.81%;
+  top: 14.84%;
+  bottom: 76.37%;
+    
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 90px;
+    /* identical to box height */
+    
+    color: black;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #51cf25;    
+}
+
+.recycled{
+  position: absolute;
+  width: 349px;
+  height: 27px;
+  left: 113px;
+  top: 294px;
+
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25; 
+
+}
+
+.userData{
+  position: absolute;
+  width: 337px;
+  height: 27px;
+  left: 981px;
+  top: 294px;
+ 
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+  
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25; 
+
+}
+
+.button{
+  position: absolute;
+  width: 353px;
+  height: 103px;
+  left: 543px;
+  top: 627px;
+  border-radius: 50%;
+  background-color:#51CF25;
+
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 27px;
+  
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25; 
+}
