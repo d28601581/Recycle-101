@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 //import PropTypes from 'prop-types';
 import AfterLogin from '../../Navbar/AfterLogin';
 import './styles/RecycleFunction.css'
+import {Link} from 'react-router-dom';
 
 import { postNewItemThunk } from '../../../redux/postItem/postItem.action';
 
@@ -90,7 +91,7 @@ class RecycleFunction extends Component {
                     <label className = "labelFour">Points: </label>
                     <input onChange={this.handlePointChange} className = "points"></input>
                     <br></br>
-                    <input type='submit' label='Complete Recycle' className = "button"></input>
+                    <Link to = "/leaderboard"><input type='submit' label='Complete Recycle' className = "button"></input></Link>
                 </form>
             </div>
         )

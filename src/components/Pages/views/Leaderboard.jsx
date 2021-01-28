@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Leaderboard.css';
 import AfterLogin from '../../Navbar/AfterLogin';
-//import history from '../routes/history';
+
 
 const Leaderboard = () => {
 

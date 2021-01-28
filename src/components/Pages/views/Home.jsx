@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Home.css';
 import AfterLogin from '../../Navbar/AfterLogin';
-import history from '../routes/history';
+import {Link} from 'react-router-dom';
 
 const Home = () => {
 
@@ -21,11 +21,10 @@ const Home = () => {
           USERNAME:                         PABLO <p></p>
           EARTH POINTS:                     9645         
         </div>
-        <button className = "button" onClick={() => history.push('/recycle')}>
+        <Link to = '/recycle'><button className = 'button'>
           Recycle
-        </button>
+        </button></Link>
     </div>
-
     
 }
 

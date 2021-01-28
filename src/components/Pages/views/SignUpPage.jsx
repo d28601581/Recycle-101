@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/SignUpPage.css';
 import BeforeLogin from '../../Navbar/BeforeLogin';
-import history from '../routes/history';
+import {Link} from 'react-router-dom';
 
 
 export default class SignUpPage extends Component{
@@ -23,7 +23,7 @@ export default class SignUpPage extends Component{
                     <input className='input' id='email' type='email'/>
                     <br/>
                     <br/>
-                    <button className='button' onClick={() => history.push('/home')}>Sign Up</button>
+                    <Link to = '/home'><button className='button'>Sign Up</button></Link>
                 </div>
             </div>
         );
