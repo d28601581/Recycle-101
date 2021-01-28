@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Home.css';
 import AfterLogin from '../../Navbar/AfterLogin';
+import history from '../routes/history';
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
           USERNAME:                         PABLO <p></p>
           EARTH POINTS:                     9645         
         </div>
-        <button className = "button">
+        <button className = "button" onClick={() => history.push('/recycle')}>
           Recycle
         </button>
     </div>

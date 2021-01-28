@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './styles/Recycle.css';
 import AfterLogin from '../../Navbar/AfterLogin';
+import history from '../routes/history';
+
 
 export default class Recycle extends Component{
     render(){
@@ -27,7 +29,7 @@ export default class Recycle extends Component{
                     <label className='points'>9905</label>
                     <br/>
                     <br/>
-                    <button className='button'>Complete Recycle</button>
+                    <button className='button' onClick={() => history.push('/leaderboard')}>Complete Recycle</button>
                 </div>
             </div>
         );
