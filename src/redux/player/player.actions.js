@@ -8,7 +8,6 @@ export const fetchAllPlayers = (payload) => ({
 });
 
 //THUNKS
-
 export const fetchAllPlayersThunk = () => {
   return async (dispatch) => {
     try {

@@ -9,7 +9,6 @@ class App extends Component {
       <div className="app">
         <header className="app-header">
           <RoutesContainer />
-          <RecycleFunction></RecycleFunction>
         </header>
       </div>
     );

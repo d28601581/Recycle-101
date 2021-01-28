@@ -13,7 +13,7 @@ export const postNewItemThunk = (newItem) => {
   return async (dispatch) => {
       console.log(newItem)
     try {
-      const { data } = await axios.post('http://localhost:8080/api/item', newItem);
+      const { data } = await axios.post('http://localhost:8080/api/item/newitem', newItem);
       console.log('data', data);
       dispatch(postNewItem(data));
     } catch (error) {
