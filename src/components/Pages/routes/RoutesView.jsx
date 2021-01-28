@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Welcome, Home, Login, Signup, Recycle } from '../views';
+import { Welcome, Home, Login, Signup, Recycle, Leaderboard } from '../views';
 
 const RoutesView = () => {
   return (
@@ -10,6 +10,7 @@ const RoutesView = () => {
       <Route exact path='/login' component={Login}/>
       <Route exact path='/signUp' component={Signup}/>
       <Route exact path='/recycle' component={Recycle}/>
+      <Route exact path='/leaderboard' component={Leaderboard}/>
     </Switch>
   );
 };
