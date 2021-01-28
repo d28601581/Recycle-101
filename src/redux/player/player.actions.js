@@ -9,23 +9,10 @@ export const fetchAllPlayers = (payload) => ({
 
 //THUNKS
 
-/* export const fetchAllPlayersThunk = () => {
-  return async (dispatch) => {
-    try {
-      const { data } = await axios.get('http://localhost:8080/api/players');
-      console.log('data', data);
-      dispatch(fetchAllPlayers(data));
-    } catch (error) {
-      console.error(error);
-    }
-  };
-}; */
-
-
 export const fetchAllPlayersThunk = () => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get('http://localhost:8080/api/players');
+      const { data } = await axios.get('http://localhost:8080/api/item');
       console.log('data', data);
       dispatch(fetchAllPlayers(data));
     } catch (error) {
