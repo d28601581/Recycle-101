@@ -7,6 +7,11 @@ export const addNewUser = (payload) => ({
   payload,
 });
 
+export const userLogIn = (payload) => ({
+  type: NewUserTypes.USER_LOGGED_IN,
+  payload
+});
+
 //THUNKS
 
 export const addNewUserThunk = (newUser) => {
@@ -15,6 +20,18 @@ export const addNewUserThunk = (newUser) => {
       const { data } = await axios.post('http://localhost:8080/api/auth/signup', newUser);
       console.log('data', data);
       dispatch(addNewUser(data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+};
+
+export const userLogInThunk = (user) => {
+  return async (dispatch) => {
+    try {
+      const { data } = await axios.post('http://localhost:8080/api/auth/login', user);
+      console.log('Login', data);
+      dispatch(userLogIn(data));
     } catch (error) {
       console.error(error);
     }
