@@ -8,7 +8,7 @@ const AllPlayersView = (props) => {
     <div className="all-players">
       {props.allPlayers.map((player) => (
         <div key={player.id}>
-          <h1>{player.firstName}</h1>
+          <h1>{player.itemName}</h1>
         </div>
       ))}
     </div>

@@ -14,7 +14,7 @@ export default class LeaderBoard extends Component{
 
         /*this.state.positions.map((target) => {
             if(target.userName === this.props.useName){
-                return 
+                return positions.indexOf(target.userName)
             }
         })*/
     }
