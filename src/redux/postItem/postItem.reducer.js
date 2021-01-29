@@ -1,7 +1,7 @@
 import PostItemActionTypes from './postItem.type';
 
 const INITIAL_STATE = {
-  newItem: [],
+  newItem: {}
 };
 
 const postItemReducer = (state = INITIAL_STATE, action) => {

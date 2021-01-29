@@ -91,7 +91,7 @@ class RecycleFunction extends Component {
                     <label className = "labelFour">Points: </label>
                     <input onChange={this.handlePointChange} className = "points"></input>
                     <br></br>
-                    <Link to = "/leaderboard"><input type='submit' label='Complete Recycle' className = "button"></input></Link>
+                    <input type='submit' text='Complete' label='Complete Recycle' className = "button"></input>
                 </form>
             </div>
         )

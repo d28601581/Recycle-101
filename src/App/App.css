@@ -1,7 +1,6 @@
 .app {
   position: relative;
-  width: 1440px;
-  height: 1024px;
+  height: 100vh;
   background: linear-gradient(180deg, #7CE393 0%, black 100%);
   
   }

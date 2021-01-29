@@ -14,6 +14,7 @@ const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware.withExtraArgument({ axios }), logger)
 );
 const store = createStore(rootReducer, middleware);
+console.log(store);
 
 // Export our store by default, which will be provided to and injected within our entire application;
 export default store;
