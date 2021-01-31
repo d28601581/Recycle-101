@@ -1,5 +1,5 @@
-const PlayerActionTypes = {
-  FETCH_ALL_PLAYERS: 'FETCH_ALL_PLAYERS',
+const ItemActionType = {
+  FETCH_ALL_ITEMS: 'FETCH_ALL_ITEMS',
 };
 
-export default PlayerActionTypes;
+export default ItemActionType;

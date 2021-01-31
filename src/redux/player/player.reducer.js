@@ -1,17 +1,17 @@
-import PlayerActionTypes from './player.types';
+import ItemActionType from './player.types';
 
 const INITIAL_STATE = {
-  allPlayers: [],
+  items: undefined,
 };
 
-const playerReducer = (state = INITIAL_STATE, action) => {
-  console.log('PL', action);
+const itemReducer = (state = INITIAL_STATE, action) => {
+  console.log('item', action);
   switch (action.type) {
-    case PlayerActionTypes.FETCH_ALL_PLAYERS:
-      return { allPlayers: action.payload };
+    case ItemActionType.FETCH_ALL_ITEMS:
+      return { ...state, items: action.payload };
     default:
       return state;
   }
 };
 
-export default playerReducer;
+export default itemReducer;

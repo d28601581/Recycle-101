@@ -6,6 +6,7 @@ import './styles/RecycleFunction.css'
 import {Link} from 'react-router-dom';
 
 import { postNewItemThunk } from '../../../redux/postItem/postItem.action';
+import { userLogInThunk } from '../../../redux/newUser/newUser.action';
 
 class RecycleFunction extends Component {
     constructor(props){
@@ -15,6 +16,7 @@ class RecycleFunction extends Component {
             category: 'Plastic',
             quantity: 0,
             points: 0,
+            userId: '',
           };
 
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
@@ -51,13 +53,13 @@ class RecycleFunction extends Component {
             itemName: this.state.itemName,
             category: this.state.category,
             quantity: this.state.quantity,
-            points: this.state.points
+            points: this.state.points,
+            user: this.props.loggedIn
         }
 
-        console.log(newitem)
+        console.log('new item', newitem)
         
         this.props.postNewItemThunk(newitem)
-
 
     }
 
@@ -102,7 +104,11 @@ class RecycleFunction extends Component {
 //     postNewItemThunk: PropTypes.func.isRequired
 //   };
 
+const mapStateToProps = (state) => ({
+    loggedIn: state.newUserReducer.loggedInUser,
+  });
+
 export default connect(
-    null,
-    {postNewItemThunk}
+    mapStateToProps,
+    {postNewItemThunk, userLogInThunk}
   )(RecycleFunction);

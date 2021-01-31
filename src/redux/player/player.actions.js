@@ -1,22 +1,22 @@
 import axios from 'axios';
-import PlayerActionTypes from './player.types';
+import ItemActionType from './player.types';
 
 //ACTION CREATORS
-export const fetchAllPlayers = (payload) => ({
-  type: PlayerActionTypes.FETCH_ALL_PLAYERS,
+export const fetchAllItems = (payload) => ({
+  type: ItemActionType.FETCH_ALL_ITEMS,
   payload,
 });
 
 //THUNKS
 
-export const fetchAllPlayersThunk = () => {
+export const fetchAllItemsThunk = (user) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get('http://localhost:8080/api/item');
+      const { data } = await axios.get('http://localhost:8080/api/item' + user);
       console.log('data', data);
-      dispatch(fetchAllPlayers(data));
+      dispatch(fetchAllItems(data));
     } catch (error) {
-      console.error(error);
+      dispatch(fetchAllItems(error));
     }
   };
 };

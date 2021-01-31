@@ -12,6 +12,12 @@ export const userLogIn = (payload) => ({
   payload
 });
 
+export const loginError = (payload) => ({
+  type: NewUserTypes.LOGIN_ERROR,
+  payload
+})
+
+
 //THUNKS
 
 export const addNewUserThunk = (newUser) => {
@@ -33,7 +39,7 @@ export const userLogInThunk = (user) => {
       console.log('Login', data);
       dispatch(userLogIn(data));
     } catch (error) {
-      console.error(error);
+      dispatch(loginError(error.response.data));
     }
   };
 };

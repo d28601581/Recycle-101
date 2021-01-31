@@ -3,8 +3,9 @@ import './styles/SignUpPage.css';
 import { connect } from 'react-redux';
 import BeforeLogin from '../../Navbar/BeforeLogin';
 import {Link} from 'react-router-dom';
+import RoutesView from '../routes/RoutesView'
 
-import { userLogInThunk } from '../../../redux/newUser/newUser.action';
+import { userLogInThunk} from '../../../redux/newUser/newUser.action';
 
 
 class LoginPage extends Component{
@@ -49,10 +50,18 @@ class LoginPage extends Component{
 
         console.log(user)
 
-        this.props.userLogInThunk(user)
+        
 
+        this.props.userLogInThunk(user).then((user) => {
+            if (this.props.isLoggedIn) 
+            this.props.history.push("/home");
+        })
+
+        
     }
     render(){
+
+        console.log(this.props.isLoggedIn);
         
         return(
             <div>
@@ -71,28 +80,18 @@ class LoginPage extends Component{
                     <br/>
                     <br/>
 
-                    <p>{(this.props.user)}</p>
+                    <p>{(this.props.error)}</p>
                     <input type='submit' value='Log In'></input>
                 </form>
-                {/* <div className='LoginPage'>
-                    <div className='Login'>Login: </div><br/>
-                    <label className='label'>Username: </label>
-                    <input className='input' id='username' type='text'/>
-                    <br/>
-                    <br/>
-                    <label className='label'>Password: </label>
-                    <input className='input' id='password' type='passssword'/>
-                    <br/>
-                    <br/>
-                    <Link to = '/home'><button className='button'>Login</button></Link>
-                </div> */}
             </div>
         );
     }
 }
 
 const mapStateToProps = (state) => ({
-    user: state.newUserReducer.loggedInUser,
+    error: state.newUserReducer.loginError,
+    loggedIn: state.newUserReducer.loggedInUser,
+    isLoggedIn: state.newUserReducer.isLoggedIn
 });
 
 export default connect(
