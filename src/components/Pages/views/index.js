@@ -5,3 +5,4 @@ export { default as Signup } from './SignUpPage';
 export { default as Login } from './LoginPage';
 export { default as Recycle } from './RecycleFunction';
 export { default as Leaderboard} from './Leaderboard';
+export { default as Map} from './RecycleMap';
