@@ -1,4 +1,3 @@
-
 import PostItemActionTypes from './postItem.type';
 
 const INITIAL_STATE = {

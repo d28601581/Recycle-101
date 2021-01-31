@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles/LoginPage.css';
 import BeforeLogin from '../../Navbar/BeforeLogin';
+import {Link} from 'react-router-dom';
 
 export default class LoginPage extends Component{
     render(){
@@ -17,7 +18,7 @@ export default class LoginPage extends Component{
                     <input className='input' id='password' type='passssword'/>
                     <br/>
                     <br/>
-                    <button className='button'>Login</button>
+                    <Link to = '/home'><button className='button'>Login</button></Link>
                 </div>
             </div>
         );

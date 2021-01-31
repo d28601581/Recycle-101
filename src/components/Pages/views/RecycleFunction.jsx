@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types';
+import AfterLogin from '../../Navbar/AfterLogin';
+import './styles/RecycleFunction.css'
+import {Link} from 'react-router-dom';
 
 import { postNewItemThunk } from '../../../redux/postItem/postItem.action';
 
@@ -61,9 +64,11 @@ class RecycleFunction extends Component {
     render() {
         return (
             <div>
+                <AfterLogin />
                 <form onSubmit={this.handleSubmit}>
-                    <label>What are you recycling? </label>
-                    <select onChange={this.handleItemChange}>
+                    <label className = "header">RECYCLE HERE:</label>
+                    <label className = "labelOne">What are you recycling? </label>
+                    <select onChange={this.handleItemChange} className = "inputOne">
                         <option>Bottle</option>
                         <option>Bag</option>
                         <option>Box</option>
@@ -72,22 +77,21 @@ class RecycleFunction extends Component {
                         <option>Electronic</option>
                     </select> 
                     <br></br>
-                    <label>Category: </label>
-                    <select onChange={this.handleCategoryChange}>
+                    <label className = "labelTwo">Category: </label>
+                    <select onChange={this.handleCategoryChange} className = "inputTwo">
                         <option>Plastic</option>
                         <option>Paper</option>
                         <option>Glass</option>
                         <option>Aluminum (foil, can, etc.) </option>
                     </select> 
                     <br></br>
-                    <label>Quantity: </label>
-                    <input onChange={this.handleQuantityChange}></input>
+                    <label className = "labelThree">Quantity: </label>
+                    <input onChange={this.handleQuantityChange} className = "inputThree"></input>
                     <br></br>
-                    <label>Points: </label>
-                    <input onChange={this.handlePointChange}></input>
+                    <label className = "labelFour">Points: </label>
+                    <input onChange={this.handlePointChange} className = "points"></input>
                     <br></br>
-
-                    <input type='submit' label='Complete Recycle'></input>
+                    <Link to = "/leaderboard"><input type='submit' label='Complete Recycle' className = "button"></input></Link>
                 </form>
             </div>
         )
