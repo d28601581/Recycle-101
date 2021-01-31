@@ -34,6 +34,7 @@ export const addNewUserThunk = (newUser) => {
 
 export const userLogInThunk = (user) => {
   return async (dispatch) => {
+    console.log("Printing user:",user)
     try {
       const { data } = await axios.post('http://localhost:8080/api/auth/login', user);
       console.log('Login', data);
