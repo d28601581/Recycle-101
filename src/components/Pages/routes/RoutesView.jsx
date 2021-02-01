@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { Welcome, Home, Login, Signup, Recycle, Leaderboard } from '../views';
+import { Welcome, Home, Map, Login, Signup, Recycle, Leaderboard } from '../views';
 import { connect } from 'react-redux';
 
 import { userLogInThunk } from '../../../redux/newUser/newUser.action';
@@ -23,7 +23,6 @@ class RoutesView extends Component{
   <Route exact path="/" component={Welcome} />
   <Route exact path="/login" component={Login} />
   <Route exact path="/signup" component={Signup} />
-  
   {this.props.isLoggedIn && (
     <Switch>
       {/* Routes placed within this section are only available after
@@ -31,6 +30,7 @@ class RoutesView extends Component{
       <Route exact path='/recycle' component={Recycle} />
       <Route exact path='/leaderboard' component={Leaderboard}/>
       <Route exact path="/home" component={Home} />
+      <Route exact path="/map" component={Map} />
       
     </Switch>
   )}
