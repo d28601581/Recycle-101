@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import RoutesView from '../routes/RoutesView'
 
 import { userLogInThunk} from '../../../redux/newUser/newUser.action';
+import { getItemsThunk} from '../../../redux/getItems/getItems.action';
 
 
 class LoginPage extends Component{
@@ -52,9 +53,11 @@ class LoginPage extends Component{
 
         
 
-        this.props.userLogInThunk(user).then((user) => {
+        this.props.userLogInThunk(user).then(() => {
             if (this.props.isLoggedIn) 
+            console.log('user',this.props.loggedIn)
             this.props.history.push("/home");
+            
         })
 
         
@@ -91,10 +94,12 @@ class LoginPage extends Component{
 const mapStateToProps = (state) => ({
     error: state.newUserReducer.loginError,
     loggedIn: state.newUserReducer.loggedInUser,
-    isLoggedIn: state.newUserReducer.isLoggedIn
+    isLoggedIn: state.newUserReducer.isLoggedIn,
+    items: state.getItemsReducer.items,
+    itemsError: state.getItemsReducer.getItemsError
 });
 
 export default connect(
     mapStateToProps,
-    {userLogInThunk}
+    {userLogInThunk, getItemsThunk}
   )(LoginPage);
