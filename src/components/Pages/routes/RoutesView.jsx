@@ -16,7 +16,7 @@ class RoutesView extends Component{
       //   <Route exact path='/signUp' component={Signup}/>
       //   <Route exact path='/recycle' component={Recycle}/>
       //   <Route exact path='/leaderboard' component={Leaderboard}/>
-      // </Switch>
+      // </Switch> Aloha
   
   <Switch>
   {/* Routes placed within this section are available to all visitors */}
