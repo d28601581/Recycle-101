@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -37,11 +36,9 @@
     transform: rotate(360deg);
   }
 }
-=======
 .app {
   position: relative;
   height: 100vh;
   background: linear-gradient(180deg, #7CE393 0%, black 100%);
   
   }
->>>>>>> fff8f7ee074f8573a0bd46f3574967d2f9653852

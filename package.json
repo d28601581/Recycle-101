@@ -7,15 +7,10 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "axios": "^0.21.1",
-<<<<<<< HEAD
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-=======
     "history": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-google-maps": "^9.4.5",
->>>>>>> fff8f7ee074f8573a0bd46f3574967d2f9653852
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",

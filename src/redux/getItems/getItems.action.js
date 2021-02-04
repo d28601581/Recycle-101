@@ -30,7 +30,7 @@ export const getItemsThunk = (user) => {
     return async (dispatch) => {
         console.log('from thunk', user)
       try {
-        const { data } = await axios.get('http://localhost:8080/api/item/getitem/' + user);
+        const { data } = await axios.get('https://capstone-recycle.herokuapp.com/api/item/getitem/' + user);
         console.log('data', data);
         dispatch(getItems(data));
       } catch (error) {
