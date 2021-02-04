@@ -1,0 +1,164 @@
+.user{
+  position: absolute;
+  width: 472px;
+  height: 27px;
+  left: 455px;
+  top: 180px;
+ 
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+/* identical to box height */
+
+  color: #FFFFFF;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.ttlPts{
+  position: absolute;
+  width: 445px;
+  height: 27px;
+  left: 455px;
+  top: 224px;
+
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+/* identical to box height */
+  
+  color: #FFFFFF;
+  
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.pos{
+  position: absolute;
+  width: 445px;
+  height: 27px;
+  left: 455px;
+  top: 269px;
+  
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+  /* identical to box height */
+    
+  color: #FFFFFF;
+    
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+  }
+
+  .rectOne{
+    position: absolute;
+    width: 405px;
+    height: 56px;
+    left: 517px;
+    top: 375px;
+    
+    background: #E5E5E5;
+
+    text-align: center;
+    font-family: Sansation Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;
+  }
+
+  .rectTwo{
+    position: absolute;
+    width: 405px;
+    height: 56px;
+    left: 517px;
+    top: 431px;
+    
+    background: #51CF25;
+
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;
+  }
+
+  .rectThree{
+    position: absolute;
+    width: 405px;
+    height: 56px;
+    left: 517px;
+    top: 487px;
+    
+    background: #E5E5E5;
+ 
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;
+  }
+
+  .rectFour{
+    position: absolute;
+    width: 405px;
+    height: 56px;
+    left: 517px;
+    top: 543px;
+    
+    background: #51CF25;
+    
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;
+  }
+
+  .rectFive{
+    position: absolute;
+    width: 405px;
+    height: 56px;
+    left: 517px;
+    top: 599px;
+    
+    background: #E5E5E5;
+    
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;
+  }

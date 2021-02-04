@@ -1,0 +1,54 @@
+.textBoxOne{
+  position: absolute;
+  width: 663px;
+  height: 356px;
+  left: 57px;
+  top: 170px;
+
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.imgOne{
+  position: absolute;
+  width: 657px;
+  height: 362px;
+  left: 768px;
+  top: 164px;
+
+}
+
+.textBoxTwo{
+  position: absolute;
+  width: 663px;
+  height: 356px;
+  left: 768px;
+  top: 614px;
+    
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 27px;
+    
+  color: black;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #51cf25;
+}
+
+.imgTwo{
+  position: absolute;
+  width: 657px;
+  height: 362px;
+  left: 57px;
+  top: 614px;
+}
