@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/SignUpPage.css';
+import './styles/LoginPage.css';
 import { connect } from 'react-redux';
 import BeforeLogin from '../../Navbar/BeforeLogin';
 import {Link} from 'react-router-dom';
@@ -65,7 +65,7 @@ class SignUpPage extends Component{
             <div>
                 <BeforeLogin />
 
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className='loginForm'>
                     
                     <label className='label'>Enter Username: </label>
                     <br/>
@@ -90,7 +90,7 @@ class SignUpPage extends Component{
                          )
 
                     }
-                    <input type='submit' value='Sign Up'></input>
+                    <input type='submit' value='Sign Up' className='lgbutton'></input>
                     
                     
 

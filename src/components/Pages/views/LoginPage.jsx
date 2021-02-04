@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/SignUpPage.css';
+import './styles/LoginPage.css';
 import { connect } from 'react-redux';
 import BeforeLogin from '../../Navbar/BeforeLogin';
 import {Link} from 'react-router-dom';
@@ -64,10 +64,11 @@ class LoginPage extends Component{
         console.log(this.props.isLoggedIn);
         
         return(
-            <div>
+            <div className='login'>
                 <BeforeLogin />
 
-                <form onSubmit={this.handleSubmit}>
+                <div className='logindiv'>
+                <form onSubmit={this.handleSubmit} className='loginForm'>
                     
                     <label className='label'>Email: </label>
                     <br/>
@@ -80,9 +81,13 @@ class LoginPage extends Component{
                     <br/>
                     <br/>
 
-                    <p>{(this.props.error)}</p>
-                    <input type='submit' value='Log In'></input>
+                    <p className='error'>{(this.props.error)}</p>
+                    <input className='lgbutton'type='submit' value='Log In'></input>
                 </form>
+
+                </div>
+
+                
             </div>
         );
     }

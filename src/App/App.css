@@ -1,6 +1,7 @@
 .app {
   position: relative;
   height: 100vh;
-  background: linear-gradient(180deg, #7CE393 0%, black 100%);
+  margin-top: 0px;
+  font-family: 'Lato', sans-serif;
   
   }

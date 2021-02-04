@@ -3,28 +3,32 @@
     margin-top:13px;
     float: right;
     text-decoration: none;
-
-    font-family: Sansation Light;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 
 .Navbar{
-    background-color:#51CF25;
+    background-color:#23c214;
 }
 .title{
     display:inline-block;
-    font-family: Sansation Light;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
     line-height: 56px;
     color: #FFFFFF;
     text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
