@@ -18,7 +18,7 @@ class Home extends React.Component {
     return <div>
     <AfterLogin />
     <div className = "home">
-      <p>{this.props.items}</p>
+      <p></p>
     </div>
     <div className = "recycled">
       YOU HAVE RECYCLED SO FAR: <p></p>

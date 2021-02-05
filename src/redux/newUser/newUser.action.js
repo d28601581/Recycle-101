@@ -39,7 +39,7 @@ export const userLogInThunk = (user) => {
       console.log('Login', data);
       dispatch(userLogIn(data));
     } catch (error) {
-      //dispatch(loginError(error.response.data));
+      dispatch(loginError(error.response.data));
     }
   };
 };
