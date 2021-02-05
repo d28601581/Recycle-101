@@ -81,7 +81,7 @@ class LoginPage extends Component{
                     <br/>
                     <br/>
 
-                    <p className='error'>{(this.props.error)}</p>
+                    <p >{(this.props.error)}</p>
                     <input className='lgbutton'type='submit' value='Log In'></input>
                 </form>
 

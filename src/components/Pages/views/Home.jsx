@@ -3,14 +3,14 @@ import './styles/Home.css';
 import AfterLogin from '../../Navbar/AfterLogin';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchAllItemsThunk} from '../../../redux/player/player.actions';
+import { getItemsThunk} from '../../../redux/getItems/getItems.action';
 import { userLogInThunk} from '../../../redux/newUser/newUser.action';
 
 class Home extends React.Component {
 
 
   componentDidMount(){
-    this.props.fetchAllItemsThunk(this.props.loggedIn)
+    this.props.getItemsThunk(this.props.loggedIn)
   }
 
 
@@ -42,10 +42,10 @@ class Home extends React.Component {
 
 const mapStateToProps = (state) => ({
   loggedIn: state.newUserReducer.loggedInUser,
-  items: state.itemReducer.items
+  items: state.getItemsReducer.items
 });
 
 export default connect(
   mapStateToProps,
-  {userLogInThunk,fetchAllItemsThunk}
+  {userLogInThunk,getItemsThunk}
 )(Home);
