@@ -12,7 +12,7 @@ export const fetchAllItems = (payload) => ({
 export const fetchAllItemsThunk = (user) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get('http://localhost:8080/api/item' + user);
+      const { data } = await axios.get('https://capstone-recycle.herokuapp.com/api/item' + user);
       console.log('data', data);
       dispatch(fetchAllItems(data));
     } catch (error) {

@@ -23,7 +23,7 @@ export const loginError = (payload) => ({
 export const addNewUserThunk = (newUser) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post('http://localhost:8080/api/auth/signup', newUser);
+      const { data } = await axios.post('https://capstone-recycle.herokuapp.com/api/auth/signup', newUser);
       console.log('data', data);
       dispatch(addNewUser(data));
     } catch (error) {
@@ -35,7 +35,7 @@ export const addNewUserThunk = (newUser) => {
 export const userLogInThunk = (user) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post('http://localhost:8080/api/auth/login', user);
+      const { data } = await axios.post('https://capstone-recycle.herokuapp.com/api/auth/login', user);
       console.log('Login', data);
       dispatch(userLogIn(data));
     } catch (error) {
