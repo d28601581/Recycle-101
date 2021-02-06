@@ -18,8 +18,10 @@ class Home extends React.Component {
     const items = this.props.items;
     console.log(items)
     let total = 0;
+    let itemTotal = 0;
     for(let i = 0; i < items.length; i++){
       total = total + items[i].points;
+      itemTotal = itemTotal + items[i].quantity;
     }
 
     console.log('Points: ', total)
@@ -35,12 +37,16 @@ class Home extends React.Component {
       <br></br>
       <br></br>
       <h1>Welcome, {this.props.loggedIn}</h1>
-      <h3>You have 300 Green points</h3>
-      YOU HAVE RECYCLED SO FAR: <p></p>
-      200 PLASTIC BOTTLES <br></br>
+      <h3>You have {total} Green points</h3>
+      <p>Recycle more to earn more points</p>
+      You have recycled {itemTotal} items so far <p></p>
+      <br></br>
+      <br></br>
+      <p>Thanks {this.props.loggedIn} for caring for the planet</p>
+      {/* 200 PLASTIC BOTTLES <br></br>
       35 PLASTIC CONTAINERS <br></br>
       300 PLASTIC BAGS <br></br>
-      200 PAPER BAGS <br></br>
+      200 PAPER BAGS <br></br> */}
 
       <br></br>
       <br></br>

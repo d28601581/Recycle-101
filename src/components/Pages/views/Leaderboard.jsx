@@ -8,13 +8,13 @@ const Leaderboard = () => {
     return <div>
         <AfterLogin />
         <label className = "user">
-            Username:               Pablo
+            Username:               
         </label>
         <label className = "ttlPts">
-            Points:                 9905
+            Points:                 
         </label>
         <label className = "pos">
-            Your Position:             77
+            Your Position:             
         </label>
         <rect className = "rectOne">
             user456231               15375 Points
