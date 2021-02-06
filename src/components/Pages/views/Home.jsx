@@ -17,23 +17,33 @@ class Home extends React.Component {
   render(){
     return <div>
     <AfterLogin />
-    <div className = "home">
-      <p></p>
-    </div>
     <div className = "recycled">
+    <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>Welcome, {this.props.loggedIn}</h1>
+      <h3>You have 300 Green points</h3>
       YOU HAVE RECYCLED SO FAR: <p></p>
       200 PLASTIC BOTTLES <br></br>
       35 PLASTIC CONTAINERS <br></br>
       300 PLASTIC BAGS <br></br>
       200 PAPER BAGS <br></br>
-    </div>
-    <div className = "userData">
-      USERNAME:                         PABLO <p></p>
-      EARTH POINTS:                     9645         
-    </div>
-    <Link to = '/recycle'><button className = 'button'>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>Ready to recycle?</h1>
+      <Link to = '/recycle'><button className = 'hmbutton'>
       Recycle
     </button></Link>
+    </div>
+    
     </div>
   } 
 }

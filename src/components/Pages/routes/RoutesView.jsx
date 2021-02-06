@@ -23,14 +23,17 @@ class RoutesView extends Component{
   <Route exact path="/" component={Welcome} />
   <Route exact path="/login" component={Login} />
   <Route exact path="/signup" component={Signup} />
+  <Route exact path="/home" component={Home} />
   
   {this.props.isLoggedIn && (
     <Switch>
       {/* Routes placed within this section are only available after
       logging in */}
-      <Route exact path='/recycle' component={Recycle} />
+      
       <Route exact path='/leaderboard' component={Leaderboard}/>
       <Route exact path="/home" component={Home} />
+      
+  <Route exact path='/recycle' component={Recycle} />
       <Route exact path="/map" component={Map} />
       
     </Switch>
