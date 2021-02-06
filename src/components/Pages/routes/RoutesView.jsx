@@ -23,7 +23,6 @@ class RoutesView extends Component{
   <Route exact path="/" component={Welcome} />
   <Route exact path="/login" component={Login} />
   <Route exact path="/signup" component={Signup} />
-  <Route exact path="/home" component={Home} />
   
   {this.props.isLoggedIn && (
     <Switch>
