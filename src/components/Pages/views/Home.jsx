@@ -15,6 +15,8 @@ class Home extends React.Component {
 
 
   render(){
+    const items = this.props.items;
+    console.log(items)
     return <div>
     <AfterLogin />
     <div className = "recycled">

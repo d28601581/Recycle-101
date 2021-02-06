@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 
 import { postNewItemThunk } from '../../../redux/postItem/postItem.action';
 import { userLogInThunk } from '../../../redux/newUser/newUser.action';
+import { getItemsThunk} from '../../../redux/getItems/getItems.action';
 
 class RecycleFunction extends Component {
     constructor(props){
@@ -121,6 +122,7 @@ class RecycleFunction extends Component {
         console.log('new item', newitem)
         
         this.props.postNewItemThunk(newitem)
+        this.props.getItemsThunk(this.props.loggedIn)
         this.props.history.push("/home");
 
     }
@@ -200,5 +202,5 @@ const mapStateToProps = (state) => ({
 
 export default connect(
     mapStateToProps,
-    {postNewItemThunk, userLogInThunk}
+    {postNewItemThunk, userLogInThunk, getItemsThunk}
   )(RecycleFunction);

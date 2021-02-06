@@ -52,7 +52,7 @@ export default class RecycleMap extends Component{
     super(props);
     this.state = {
       bins: [],
-      targetBorough: ''
+      targetBorough: 'Brooklyn'
     }
   }
 
@@ -87,16 +87,21 @@ export default class RecycleMap extends Component{
       return (
         <div>
           <AfterLogin />
-          <center><h1 classname = "titleMap">RECYCLE BINS IN NEW YORK CITY:</h1></center>
-          <div style = {{width: '100vw', height: '150vh'}}>
-            <WrappedMap value={this.state.bins}
+          <div className='mappage'>
+          <div className='map'>
+          <center><h1 className = "titleMap" >Find all the locations of recycle bins in NYC</h1></center>
+            <WrappedMap className='gmap' value={this.state.bins}
               googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAkUx4MtvC1Myj874JjO8wA5yzA6BzCPb8"
               loadingElement = {<div style={{ height: `100%` }} />}
-              containerElement = {<div style={{ height: `400px` }} />}
+              containerElement = {<div style={{ height: `600px` }} />}
               mapElement = {<div style={{ height: `100%` }} />}
             />
+            </div>
+
+            <div className='mapform'>
             <form onSubmit={this.handleSubmit}>
               <label className = "borough" >Find recycle bins in your borough: </label>
+              
               <select onChange={this.handleChange} className = "inputTwo">
                     <option>Brooklyn</option>
                     <option>Bronx</option>
@@ -104,9 +109,14 @@ export default class RecycleMap extends Component{
                     <option>Queens</option>
                     <option>Staten Island</option>
               </select>
-              <p><button className = "mapButton">Enter</button></p>
+              <p><button className = "mapButton">Search</button></p>
             </form>
+
+            </div>
+
           </div>
+          
+          
         </div>
       )
   }
