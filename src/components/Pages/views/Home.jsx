@@ -17,7 +17,7 @@ class Home extends React.Component {
   render(){
     const items = this.props.items;
     console.log(items)
-    const total = 0;
+    let total = 0;
     for(let i = 0; i < items.length; i++){
       total = total + items[i].points;
     }
