@@ -62,7 +62,7 @@ class SignUpPage extends Component{
     render(){
         const validateUser = this.state.userName === this.props.user;
         return(
-            <div>
+            <div className='login'>
                 <BeforeLogin />
 
                 <form onSubmit={this.handleSubmit} className='loginForm'>

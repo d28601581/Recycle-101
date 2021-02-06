@@ -1,9 +1,12 @@
 html{
     font-family: 'Lato', sans-serif;
+
+}
+.login{
     background: lightblue url("./images/leaves/leaves.jpg") no-repeat;
     background-size: cover;
+    height: 100vh;
 }
-
 ul{
     margin-top: 0px;
 }
@@ -31,7 +34,6 @@ font-style: normal;
 font-weight: 300;
 font-size: 128px;
 line-height: 143px;
-
 color: #FFFFFF;
 }
 
