@@ -9,10 +9,10 @@ export default class AfterLogin extends Component{
         return(
             <nav className='Navbar'>
                 <ol>
-                    <Link className = 'title' to = '/home'>Recycle 101</Link>
-                    <Link className = 'link' to="/map">MAP</Link>
-                    <Link className = 'link' to="/leaderboard">LEADERBOARD</Link>
-                    <Link className = 'link' to="/">SIGNOUT</Link>
+                    <Link className = 'title' to = '/home'>Greenify</Link>
+                    <Link className = 'link' to="/map">Map</Link>
+                    <Link className = 'link' to="/leaderboard">Leaderboard</Link>
+                    <Link className = 'link' to="/">Log Out</Link>
                 </ol>  
             </nav>
             

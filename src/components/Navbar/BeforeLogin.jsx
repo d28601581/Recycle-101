@@ -10,10 +10,10 @@ export default class BeforeLogin extends Component{
                 <ul>
                     <Link className = 'title' to = "/" >
                         
-                        Recycle 101
+                        Greenify
                     </Link>
-                    <Link className = 'link' to="/Login">LOGIN</Link>
-                    <Link className = 'link' to="/SignUp">SIGN UP</Link>
+                    <Link className = 'link' to="/Login">Log In</Link>
+                    <Link className = 'link' to="/SignUp">Sign Up</Link>
   
                 </ul>  
             </nav>
