@@ -1,7 +1,6 @@
 # Recycle 101
 A full-stack web app made to engage and encourage people to recycle.</br>
 __Made by:__ Ariel Benzur, Peng Dong, Mohammad Hossain </br>
-__Date:__ Jan. 25th - Jan 31st 2021 </br>
 __Deployed at:__ https://frontend-recycle-101.herokuapp.com/ </br>
 __Link to Back-end:__ https://github.com/d28601581/Recycle-101-Backend </br>
 
