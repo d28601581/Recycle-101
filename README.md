@@ -7,21 +7,27 @@ __Link to Back-end:__ https://github.com/d28601581/Recycle-101-Backend </br>
 ## UI Wireframes:
 These wireframes were made pre-development to lay the foundation for the idea. </br>
 
-__Welcome Page:__
+Welcome Page:
+
 ![WP](https://i.imgur.com/lKosIJk.pngg)
 
-__Log-in,sign-up, form errors:__
+Log-in,sign-up, form errors:
+
 ![login](https://i.imgur.com/WB6akXx.png)
 ![signup](https://i.imgur.com/GSbaOKr.png)
 
-__Homepage:__
+Homepage:
+
 ![WP](https://i.imgur.com/3uE5vRq.png)
 
-__Map:__
+Map:
+
 ![map](https://i.imgur.com/95WnwTX.png)
 
-__Add Values:__
+Add Values:
+
 ![AV](https://i.imgur.com/gOQHsnU.png)
 
-__Leaderboard:__
+Leaderboard:
+
 ![leaderboard](https://i.imgur.com/R8UP8s3.png)
